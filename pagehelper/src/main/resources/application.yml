@@ -1,0 +1,19 @@
+spring:
+  datasource: 
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/study?useUnicode=true&characterEncoding=utf8&allowMultiQueries=true
+    username: ming
+    password: ming0201
+    maxActive: 10
+    initialSize: 10
+    maxWait: 60000
+    minIdle: 5
+    timeBetweenEvictionRunsMillis: 3000
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: SELECT 1 from dual
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    
+mybatis:
+  mapperLocations: classpath*:mapper/*.xml
